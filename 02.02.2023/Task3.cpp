@@ -5,9 +5,9 @@ int main()
     size_t square = 0;
     scanf("%d", &square);
 
-    size_t left  = 1;
-    size_t right = square;
+    size_t left   = 1;
     size_t middle = 0;
+    size_t right  = square;
 
     while (left <= right)
     {
