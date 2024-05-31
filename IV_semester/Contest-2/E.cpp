@@ -110,14 +110,14 @@ void Polynom<T>::expand(size_t new_power)
 template <typename T>
 void Polynom<T>::delete_leading_zeroes()
 {
-	size_t real_pow = pow;
+	size_t real_pow = coeffs.size() - 1;
 	while (coeffs[real_pow] == 0)
 	{
 		real_pow--;
 	}
 
-	coeffs.resize(real_pow);
-	pow = real_pow;;
+	coeffs.resize(real_pow + 1);
+	pow = real_pow;
 }
 
 //-------------------------------------------------------------------------------------------------
